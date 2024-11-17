@@ -12,12 +12,12 @@ class Warrior():
 
 
     def eat(self):
-        print(f"{self.name}сел кушать")
-        self.endurance += 1
+        print(f"{self.name} сел кушать")
+        self.power += 1
 
 
     def hit(self):
-        print(f"{self.name}бьет кого-то")
+        print(f"{self.name} бьет кого-то")
         self.endurance -= 1
 
 
@@ -30,3 +30,13 @@ class Warrior():
         print(f"цвет волос воина - {self.hair_color}")
         print(f"сила воина - {self.power}")
         print(f"выносливость воина - {self.endurance}")
+
+war1 = Warrior (name='Марк',power=30,endurance=10,hair_color='Красные')
+war2 = Warrior (name='Степашка',power=76, endurance=77,hair_color='Белые')
+war2.info()
+
+war2.sleep()
+war2.wolk()
+war2.eat()
+
+war2.info()
